@@ -2,15 +2,30 @@
 @use '../fonts/' as fonts;
 @use './sizing' as sizing;
 
+// Map for the fonts
 $fonts: (
-    'inter': fonts.$font-inter,
+    'orbitron': fonts.$font-orbitron,
     'fira-code': fonts.$font-fira-code,
+    'exo': fonts.$font-exo,
 );
 
-//Prof said he would create another map here but did this next line for simplicity sake
-$font-body:map-get($fonts, 'inter');
-$font-code: map-get($fonts, 'fira-code');
+// Prof said he would create another map here but did this next line for simplicity sake
+// Variables for convenience
+$font-heading: map-get($fonts, 'orbitron'); // Orbitron for headings
+$font-body: map-get($fonts, 'exo');         // Exo for body text
+$font-code: map-get($fonts, 'fira-code');   // Fira Code for code blocks
 
+// Font-family for Heading so it's separate from font-body
+.font-heading {
+    font-family: $font-heading;
+}
+
+// Separate font-family utility class for targeting bodies of text
+.font-body {
+    font-family: $font-body;
+}
+
+// Font size utilities
 @each $size, $value in sizing.$font-sizes {
     .text-#{$size} {
         font-size: $value;
