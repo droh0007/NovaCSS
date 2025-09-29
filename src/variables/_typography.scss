@@ -1,0 +1,18 @@
+@use 'sass:map';
+@use '../fonts/' as fonts;
+@use './sizing' as sizing;
+
+$fonts: (
+    'inter': fonts.$font-inter,
+    'fira-code': fonts.$font-fira-code,
+);
+
+//Prof said he would create another map here but did this next line for simplicity sake
+$font-body:map-get($fonts, 'inter');
+$font-code: map-get($fonts, 'fira-code');
+
+@each $size, $value in sizing.$font-sizes {
+    .text-#{$size} {
+        font-size: $value;
+    }
+}
