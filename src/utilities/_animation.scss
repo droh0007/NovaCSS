@@ -1,0 +1,41 @@
+/* NovaCSS – MTM6407, author: Team Nova */
+
+// Utilities: subtle hover and loading animations.
+.link-underline {
+  position: relative;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.3s ease;
+}
+
+.link-underline:hover,
+.link-underline:focus {
+  background-size: 100% 2px;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-surface-muted);
+  display: block;
+  width: 100%;
+}
+
+.skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-sm { height: 0.5rem; }
+.skeleton-md { height: 0.75rem; }
+.skeleton-lg { height: 1rem; }

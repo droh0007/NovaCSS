@@ -1,0 +1,21 @@
+/* NovaCSS – MTM6407, author: Team Nova */
+@use 'sass:map';
+@use '../variables/' as variables;
+
+// Forms: wrappers, labels, and helper copy.
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.help-text {
+  font-size: map.get(variables.$font-sizes, 'sm');
+  color: var(--color-muted);
+}

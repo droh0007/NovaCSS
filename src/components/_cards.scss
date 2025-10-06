@@ -1,0 +1,29 @@
+/* NovaCSS – MTM6407, author: Team Nova */
+@use 'sass:map';
+@use '../variables/' as variables;
+
+// Cards: tidy surfaces with subtle rhythm.
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-surface-muted);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: var(--color-text);
+}
+
+.card-header {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.card-footer {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-surface-muted);
+  font-size: map.get(variables.$font-sizes, 'sm');
+  color: var(--color-muted);
+}

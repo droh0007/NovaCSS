@@ -1,0 +1,9 @@
+/* NovaCSS – MTM6407, author: Team Nova */
+@use '../variables/elevation' as elevation;
+
+// Utilities: box-shadows generated from elevation tokens.
+@each $level, $shadow in elevation.$elevations {
+  .shadow-#{$level} {
+    box-shadow: #{if($shadow == none, none, $shadow)};
+  }
+}

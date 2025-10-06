@@ -1,0 +1,26 @@
+/* NovaCSS – MTM6407, author: Team Nova */
+
+// Utilities: spacing scale for margin and padding helpers.
+$space-scale: (
+  '0': 0,
+  '1': 0.125rem,
+  '2': 0.25rem,
+  '3': 0.375rem,
+  '4': 0.5rem,
+  '5': 0.75rem,
+  '6': 1rem,
+  '7': 1.5rem
+);
+
+@each $key, $value in $space-scale {
+  .m-#{$key} { margin: $value; }
+  .p-#{$key} { padding: $value; }
+  .mt-#{$key} { margin-top: $value; }
+  .mr-#{$key} { margin-right: $value; }
+  .mb-#{$key} { margin-bottom: $value; }
+  .ml-#{$key} { margin-left: $value; }
+  .pt-#{$key} { padding-top: $value; }
+  .pr-#{$key} { padding-right: $value; }
+  .pb-#{$key} { padding-bottom: $value; }
+  .pl-#{$key} { padding-left: $value; }
+}

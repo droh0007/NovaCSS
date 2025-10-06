@@ -1,0 +1,19 @@
+/* NovaCSS – MTM6407, author: Team Nova */
+
+// Utilities: premium gradient backgrounds and text treatments.
+.bg-nebula {
+  background-image: var(--gradient-nebula);
+  color: #ffffff;
+}
+
+.bg-aurora {
+  background-image: var(--gradient-aurora);
+  color: #ffffff;
+}
+
+.text-gradient {
+  background-image: var(--gradient-nebula);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}

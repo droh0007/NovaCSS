@@ -1,0 +1,25 @@
+/* NovaCSS – MTM6407, author: Team Nova */
+
+// Utilities: interactive effects like rings, blur, and motion.
+.ring { box-shadow: 0 0 0 2px var(--ring-color); }
+.ring-0 { box-shadow: none; }
+
+.backdrop {
+  background-color: var(--glass-tint);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.blur-sm { filter: blur(4px); }
+.blur-md { filter: blur(8px); }
+
+.transition { transition: all 0.3s ease; }
+.transition-fast { transition: all 0.15s ease; }
+
+.icon {
+  width: 1.1em;
+  height: 1.1em;
+  display: inline-block;
+  flex-shrink: 0;
+  fill: currentColor;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "novacss-1",
+  "version": "1.0.0",
+  "description": "Nova CSS is a custom CSS Framework designed for MTM6407",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --style=expanded --no-source-map src/nova.scss css/nova.css",
+    "sass:watch": "sass --style=expanded --no-source-map --watch src/nova.scss css/nova.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/droh0007/NovaCSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/droh0007/NovaCSS/issues"
+  },
+  "homepage": "https://github.com/droh0007/NovaCSS#readme",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

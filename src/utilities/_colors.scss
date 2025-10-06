@@ -1,0 +1,13 @@
+/* NovaCSS – MTM6407, author: Team Nova */
+
+// Utilities: semantic text and background helpers.
+.text-primary { color: var(--color-primary); }
+.text-muted { color: var(--color-muted); }
+.text-success { color: var(--color-success); }
+.text-warning { color: var(--color-warning); }
+.text-danger { color: var(--color-danger); }
+.text-surface { color: var(--color-surface); }
+
+.bg-primary { background-color: var(--color-primary); color: #ffffff; }
+.bg-surface { background-color: var(--color-surface); }
+.bg-muted { background-color: var(--color-surface-muted); }

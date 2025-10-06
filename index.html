@@ -7,20 +7,138 @@
     <link rel="stylesheet" href="./css/nova.css" />
 </head>
 <body>
+    <button id="theme-toggle" class="btn btn-outline m-6" type="button">Toggle Theme</button>
 
-    <h1 class="font-heading text-3xl">Nova CSS</h1>
+    <main class="container grid gap-6 mt-6 mb-7">
+        <section class="bg-surface rounded-lg shadow-2 p-6">
+            <h2 class="fw-bold text-gradient text-2xl">Typography &amp; Lists</h2>
+            <p class="text-muted">Headings and copy share a steady rhythm.</p>
+            <h1>Heading One</h1>
+            <h2>Heading Two</h2>
+            <h3>Heading Three</h3>
+            <h4>Heading Four</h4>
+            <h5>Heading Five</h5>
+            <h6>Heading Six</h6>
+            <p class="mt-4">This paragraph leans on <a href="#" class="link-underline">link styles</a> for emphasis and contrast.</p>
+            <ul>
+                <li>Unordered list item</li>
+                <li>Another note in the list</li>
+            </ul>
+            <ol>
+                <li>Ordered list first step</li>
+                <li>Second step with care</li>
+            </ol>
+            <hr>
+            <pre><code>code sample();</code></pre>
+        </section>
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque saepe in odit voluptatem sed corrupti ullam? Aspernatur autem blanditiis itaque, iste suscipit, modi odit magnam velit tenetur odio esse! Impedit.</p>
-    <p>Quidem quae, ratione eligendi eveniet at optio eum in corporis ipsam! Perspiciatis quod rerum suscipit officia sequi, eum consequatur, itaque sed culpa vero quia repellendus similique corporis sint, modi voluptas.</p>
-    <p>Dolore, impedit, asperiores illo cum ab enim molestiae debitis vero labore tempore iste amet, nesciunt necessitatibus rerum repudiandae voluptas. Eos nisi sit laborum placeat dignissimos! Voluptatibus maiores explicabo aperiam quod.</p>
+        <section class="bg-surface rounded-lg shadow-2 p-6">
+            <h2 class="fw-bold text-2xl">Buttons</h2>
+            <div class="flex gap-4 mt-4">
+                <button class="btn" type="button"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/></svg>Default</button>
+                <button class="btn btn-primary" type="button"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3.5 14.2 9h5.3l-4.3 3.3 1.6 5.2L12 14.8 7.2 17.5 8.8 12 4.5 9h5.3z" fill="currentColor"/></svg>Primary</button>
+                <button class="btn btn-outline" type="button"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5a7 7 0 0 1 7 7h-2a5 5 0 1 0-5 5v2a7 7 0 1 1 0-14z" fill="currentColor"/></svg>Outline</button>
+                <button class="btn" type="button" disabled>Disabled</button>
+            </div>
+        </section>
 
-    <div class="code-example">
-        <pre>
-            <code>
-                <hl>Hello Class</hl>
-            </code>
-        </pre>
-    </div>
-    
+        <section class="bg-surface rounded-lg shadow-2 p-6">
+            <h2 class="fw-bold text-2xl">Form Elements</h2>
+            <form class="mt-4 grid gap-4 max-w-lg">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" class="input-success" placeholder="Jamie Doe" />
+                    <span class="help-text">Looks good.</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" class="input-error" placeholder="name@example.com" />
+                    <span class="help-text text-danger">Double-check formatting.</span>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role">
+                        <option>Student</option>
+                        <option>Instructor</option>
+                        <option>Guest</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" rows="4" placeholder="Share feedback..."></textarea>
+                </div>
+            </form>
+        </section>
+
+        <section class="bg-surface rounded-lg shadow-2 p-6">
+            <h2 class="fw-bold text-2xl">Table</h2>
+            <table class="table-compact mt-4">
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Status</th>
+                        <th>Owner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nova Landing</td>
+                        <td class="text-success">On Track</td>
+                        <td>Mia</td>
+                    </tr>
+                    <tr>
+                        <td>Docs Refresh</td>
+                        <td class="text-warning">Reviewing</td>
+                        <td>Jay</td>
+                    </tr>
+                    <tr>
+                        <td>Theme Audit</td>
+                        <td class="text-danger">Needs Fix</td>
+                        <td>Sam</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="bg-surface rounded-lg shadow-2 p-6">
+            <h2 class="fw-bold text-2xl">Icons</h2>
+            <p class="text-muted">Font Awesome pairs with Nova utilities for quick links.</p>
+            <div class="flex gap-4 mt-4">
+                <a class="btn btn-outline" href="mailto:hello@novacss.dev"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="4,6 12,12 20,6" fill="none" stroke="currentColor" stroke-width="2"/></svg> Email</a>
+                <a class="btn" href="https://www.instagram.com" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4" ry="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg> Instagram</a>
+                <a class="btn" href="https://www.twitter.com" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 7.1a5.9 5.9 0 0 1-1.9.6 3.3 3.3 0 0 0 1.4-1.8 6.5 6.5 0 0 1-2.1.9 3.2 3.2 0 0 0-5.5 2.2c0 .25 0 .5.1.73A9.1 9.1 0 0 1 5.1 6.2a3.2 3.2 0 0 0 1 4.3 3.2 3.2 0 0 1-1.4-.4v.04a3.2 3.2 0 0 0 2.6 3.1 3.3 3.3 0 0 1-1.4.06 3.2 3.2 0 0 0 3 2.2A6.5 6.5 0 0 1 4 17.2 9.1 9.1 0 0 0 9 18.7c6.2 0 9.6-5.4 9.6-10v-.46A6.9 6.9 0 0 0 20 7.1z" fill="currentColor"/></svg> Twitter</a>
+            </div>
+        </section>
+
+        <section class="grid gap-4">
+            <article class="card shadow-4">
+                <div class="bg-nebula rounded-md p-4">
+                    <h3 class="fw-bold mb-0">Nebula Highlight</h3>
+                    <p class="mt-2 mb-0">Gradient and ring tokens add polish.</p>
+                </div>
+            </article>
+            <article class="card shadow-2">
+                <div class="backdrop rounded-md p-4">
+                    <h3 class="fw-bold mb-0">Glass Snapshot</h3>
+                    <p class="mt-2 mb-0">Backdrop blur keeps layouts airy while readable.</p>
+                    <div class="grid gap-2 mt-3">
+                        <span class="skeleton skeleton-sm rounded-sm"></span>
+                        <span class="skeleton skeleton-md rounded-sm"></span>
+                        <span class="skeleton skeleton-lg rounded-sm"></span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        (function () {
+            var toggle = document.getElementById('theme-toggle');
+            if (!toggle) return;
+            toggle.addEventListener('click', function () {
+                document.documentElement.classList.toggle('dark');
+            });
+        }());
+    </script>
 </body>
 </html>
