@@ -15,6 +15,6 @@ We leaned on partials, shared maps, and the @use/@forward pattern to keep everyt
 
 Team Roles
 Kate – Project lead & review
-Simore – Tokens & typography
+Mohammed – Tokens & typography
 William – Utilities & layout
 Ramneek – Components & docs
