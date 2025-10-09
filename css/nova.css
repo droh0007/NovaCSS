@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* NovaCSS – MTM6407, author: Team Nova */
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
@@ -92,10 +91,7 @@ meter {
   display: none;
 }
 
-/* NovaCSS – MTM6407, author: Team Nova */
-/* NovaCSS – MTM6407, author: Team Nova */
-:root,
-html {
+:root, html {
   --color-primary-600: #4b53d5;
   --color-primary-700: #3d43b4;
   --color-primary: #5c63f2;
@@ -108,14 +104,13 @@ html {
   --color-warning: #d97706;
   --color-danger: #c2410c;
   --radius: 0.45rem;
-  --gradient-nebula: linear-gradient(130deg, #4b53d5, rgb(168.45, 172.7, 242.55));
-  --gradient-aurora: linear-gradient(160deg, #3d43b4, rgb(106.5, 128.1, 60.6));
-  --glass-tint: rgba(137.3076923077, 142.5384615385, 227.5384615385, 0.325);
-  --ring-color: rgb(201, 203.4, 242.4);
+  --gradient-nebula: linear-gradient(130deg, #4b53d5, #a8acf2);
+  --gradient-aurora: linear-gradient(160deg, #3d43b4, #6a803c);
+  --glass-tint: rgba(138, 142, 227, 0.32);
+  --ring-color: rgba(201, 203, 242, 0.9);
 }
 
-:root.dark,
-html.dark {
+:root.dark, html.dark {
   --color-primary-600: #7683ff;
   --color-primary-700: #5a6be0;
   --color-primary: #9ca9ff;
@@ -128,14 +123,12 @@ html.dark {
   --color-warning: #fbbf24;
   --color-danger: #f87171;
   --radius: 0.45rem;
-  --gradient-nebula: linear-gradient(130deg, #7683ff, rgb(90, 100.25, 150.5));
-  --gradient-aurora: linear-gradient(160deg, #5a6be0, rgb(124.25, 171.5, 80.85));
-  --glass-tint: rgba(86.1538461538, 97.0769230769, 184.7307692308, 0.325);
-  --ring-color: rgb(53.6, 62.4, 112.9);
+  --gradient-nebula: linear-gradient(130deg, #7683ff, #5a6be0);
+  --gradient-aurora: linear-gradient(160deg, #5a6be0, #7caf51);
+  --glass-tint: rgba(86, 97, 185, 0.32);
+  --ring-color: rgba(54, 62, 113, 0.85);
 }
 
-/* NovaCSS – MTM6407, author: Team Nova */
-/* NovaCSS – MTM6407, author: Team Nova */
 .font-heading {
   font-family: "orbitron", sans-serif;
 }
@@ -145,34 +138,33 @@ html.dark {
 }
 
 .text-xs {
-  font-size: 0.75rem;
+  font-size: 11px;
 }
 
 .text-sm {
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 
 .text-md {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .text-lg {
-  font-size: 1.25rem;
+  font-size: 26px;
 }
 
 .text-xl {
-  font-size: 1.5rem;
+  font-size: 28px;
 }
 
 .text-2xl {
-  font-size: 1.875rem;
+  font-size: 52px;
 }
 
 .text-3xl {
-  font-size: 2.25rem;
+  font-size: 62px;
 }
 
-/* NovaCSS – MTM6407, author: Team Nova */
 /* NovaCSS – MTM6407, author: Team Nova */
 html {
   box-sizing: border-box;
@@ -184,7 +176,7 @@ html {
 
 body {
   font-family: "exo", sans-serif;
-  font-size: 1rem;
+  font-size: 18px;
   line-height: 1.6;
   color: var(--color-text);
   background: var(--color-bg);
@@ -198,7 +190,7 @@ body, button, input, select, textarea {
 
 h1 {
   font-family: "orbitron", sans-serif;
-  font-size: 2.25rem;
+  font-size: 62px;
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 0.75rem;
@@ -207,7 +199,7 @@ h1 {
 
 h2 {
   font-family: "orbitron", sans-serif;
-  font-size: 1.875rem;
+  font-size: 52px;
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 0.75rem;
@@ -216,7 +208,7 @@ h2 {
 
 h3 {
   font-family: "orbitron", sans-serif;
-  font-size: 1.5rem;
+  font-size: 28px;
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 0.75rem;
@@ -225,7 +217,7 @@ h3 {
 
 h4 {
   font-family: "orbitron", sans-serif;
-  font-size: 1.25rem;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 0.75rem;
@@ -234,7 +226,7 @@ h4 {
 
 h5 {
   font-family: "orbitron", sans-serif;
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 0.75rem;
@@ -243,7 +235,7 @@ h5 {
 
 h6 {
   font-family: "orbitron", sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 0.75rem;
@@ -306,7 +298,7 @@ pre,
 code {
   font-family: "Fira Code", monospace;
   background: var(--color-surface-muted);
-  border-radius: 0.2rem;
+  border-radius: 0.25rem;
 }
 
 pre {
@@ -331,6 +323,174 @@ code {
     scroll-behavior: auto !important;
   }
 }
+/* NovaCSS – MTM6407, author: Team Nova */
+/* NovaCSS – MTM6407, author: Team Nova */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.95rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-surface-muted);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--color-surface-muted);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary-600);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: color-mix(in srgb, var(--color-primary) 85%, #ffffff 15%);
+}
+
+.btn-primary:active {
+  background: color-mix(in srgb, var(--color-primary-600) 90%, #000000 10%);
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline:hover {
+  background: color-mix(in srgb, var(--color-primary) 12%, var(--color-surface) 88%);
+}
+
+.btn:disabled,
+.btn[aria-disabled=true] {
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+}
+
+/* NovaCSS – MTM6407, author: Team Nova */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.help-text {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+/* NovaCSS – MTM6407, author: Team Nova */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-surface-muted);
+  background: var(--color-surface);
+  color: var(--color-text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--ring-color);
+  outline: none;
+}
+
+.input-success {
+  border-color: var(--color-success);
+}
+
+.input-error {
+  border-color: var(--color-danger);
+}
+
+.input-success:focus {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-success) 55%, transparent 45%);
+}
+
+.input-error:focus {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-danger) 55%, transparent 45%);
+}
+
+/* NovaCSS – MTM6407, author: Team Nova */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-surface-muted);
+  text-align: left;
+}
+
+thead th {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+}
+
+tbody tr:hover {
+  background: color-mix(in srgb, var(--color-surface-muted) 40%, var(--color-surface) 60%);
+}
+
+.table-compact th,
+.table-compact td {
+  padding-block: 0.5rem;
+}
+
+/* NovaCSS – MTM6407, author: Team Nova */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-surface-muted);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: var(--color-text);
+}
+
+.card-header {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.card-footer {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-surface-muted);
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
 /* NovaCSS – MTM6407, author: Team Nova */
 /* NovaCSS – MTM6407, author: Team Nova */
 .link-underline {
@@ -384,7 +544,6 @@ code {
 }
 
 /* NovaCSS – MTM6407, author: Team Nova */
-/* NovaCSS – MTM6407, author: Team Nova */
 .border {
   border: 1px solid var(--color-surface-muted);
 }
@@ -398,7 +557,7 @@ code {
 }
 
 .rounded-sm {
-  border-radius: 0.2rem;
+  border-radius: 0.25rem;
 }
 
 .rounded-md {
@@ -406,11 +565,11 @@ code {
 }
 
 .rounded-lg {
-  border-radius: 0.8rem;
+  border-radius: 0.85rem;
 }
 
 .rounded-xl {
-  border-radius: 1.25rem;
+  border-radius: 1.35rem;
 }
 
 .rounded-full {
@@ -681,4 +840,272 @@ code {
   padding-left: 0.125rem;
 }
 
-/* (truncated for brevity — continues with all margin/padding, buttons, tables, and card rules exactly as in your input) */
+.m-2 {
+  margin: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.25rem;
+}
+
+.pt-2 {
+  padding-top: 0.25rem;
+}
+
+.pr-2 {
+  padding-right: 0.25rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.25rem;
+}
+
+.pl-2 {
+  padding-left: 0.25rem;
+}
+
+.m-3 {
+  margin: 0.375rem;
+}
+
+.p-3 {
+  padding: 0.375rem;
+}
+
+.mt-3 {
+  margin-top: 0.375rem;
+}
+
+.mr-3 {
+  margin-right: 0.375rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.375rem;
+}
+
+.ml-3 {
+  margin-left: 0.375rem;
+}
+
+.pt-3 {
+  padding-top: 0.375rem;
+}
+
+.pr-3 {
+  padding-right: 0.375rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.375rem;
+}
+
+.pl-3 {
+  padding-left: 0.375rem;
+}
+
+.m-4 {
+  margin: 0.5rem;
+}
+
+.p-4 {
+  padding: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 0.5rem;
+}
+
+.mr-4 {
+  margin-right: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 0.5rem;
+}
+
+.ml-4 {
+  margin-left: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 0.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 0.5rem;
+}
+
+.pl-4 {
+  padding-left: 0.5rem;
+}
+
+.m-5 {
+  margin: 0.75rem;
+}
+
+.p-5 {
+  padding: 0.75rem;
+}
+
+.mt-5 {
+  margin-top: 0.75rem;
+}
+
+.mr-5 {
+  margin-right: 0.75rem;
+}
+
+.mb-5 {
+  margin-bottom: 0.75rem;
+}
+
+.ml-5 {
+  margin-left: 0.75rem;
+}
+
+.pt-5 {
+  padding-top: 0.75rem;
+}
+
+.pr-5 {
+  padding-right: 0.75rem;
+}
+
+.pb-5 {
+  padding-bottom: 0.75rem;
+}
+
+.pl-5 {
+  padding-left: 0.75rem;
+}
+
+.m-6 {
+  margin: 1rem;
+}
+
+.p-6 {
+  padding: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1rem;
+}
+
+.mr-6 {
+  margin-right: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1rem;
+}
+
+.ml-6 {
+  margin-left: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1rem;
+}
+
+.pr-6 {
+  padding-right: 1rem;
+}
+
+.pb-6 {
+  padding-bottom: 1rem;
+}
+
+.pl-6 {
+  padding-left: 1rem;
+}
+
+.m-7 {
+  margin: 1.5rem;
+}
+
+.p-7 {
+  padding: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.5rem;
+}
+
+.mr-7 {
+  margin-right: 1.5rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.5rem;
+}
+
+.ml-7 {
+  margin-left: 1.5rem;
+}
+
+.pt-7 {
+  padding-top: 1.5rem;
+}
+
+.pr-7 {
+  padding-right: 1.5rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.5rem;
+}
+
+.pl-7 {
+  padding-left: 1.5rem;
+}
+
+/* NovaCSS – MTM6407, author: Team Nova */
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+/* NovaCSS – MTM6407, author: Team Nova */
+.hide {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

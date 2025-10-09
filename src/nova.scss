@@ -1,4 +1,6 @@
 @use './reset/' as reset;
 @use './variables/' as variables;
 @use './base/' as base;
+@use './components';
+@use './utilities';
 // In termanal you can run: sass --watch src/nova.scss css/lunar.css

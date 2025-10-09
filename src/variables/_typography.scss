@@ -11,9 +11,9 @@ $fonts: (
 
 // Prof said he would create another map here but did this next line for simplicity sake
 // Variables for convenience
-$font-heading: map-get($fonts, 'orbitron'); // Orbitron for headings
-$font-body: map-get($fonts, 'exo');         // Exo for body text
-$font-code: map-get($fonts, 'fira-code');   // Fira Code for code blocks
+$font-heading: map.get($fonts, 'orbitron'); // Orbitron for headings
+$font-body: map.get($fonts, 'exo');         // Exo for body text
+$font-code: map.get($fonts, 'fira-code');   // Fira Code for code blocks
 
 // Font-family for Heading so it's separate from font-body
 .font-heading {

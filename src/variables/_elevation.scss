@@ -1,0 +1,8 @@
+// Elevation map for shadow utilities and component surfaces.
+$elevations: (
+  0: none,
+  1: 0 1px 3px rgba(15, 23, 42, 0.09),
+  2: 0 3px 8px rgba(15, 23, 42, 0.12),
+  3: 0 8px 18px rgba(15, 23, 42, 0.16),
+  4: 0 14px 32px rgba(15, 23, 42, 0.2)
+);

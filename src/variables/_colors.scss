@@ -1,0 +1,67 @@
+@use 'sass:map';
+
+// Radius scale keeps rounded utilities consistent across the system.
+$radius-scale: (
+  'sm': 0.25rem,
+  'md': 0.45rem,
+  'lg': 0.85rem,
+  'xl': 1.35rem,
+  'full': 9999px
+);
+
+// Light theme tokens exposed as CSS custom properties.
+$light-theme: (
+  'color-primary-600': #4b53d5,
+  'color-primary-700': #3d43b4,
+  'color-primary': #5c63f2,
+  'color-bg': #f4f5f9,
+  'color-surface': #ffffff,
+  'color-surface-muted': #e7e9f3,
+  'color-text': #1f2933,
+  'color-muted': #52606d,
+  'color-success': #2f855a,
+  'color-warning': #d97706,
+  'color-danger': #c2410c,
+  'radius': map.get($radius-scale, 'md'),
+  'gradient-nebula': linear-gradient(130deg, #4b53d5, #a8acf2),
+  'gradient-aurora': linear-gradient(160deg, #3d43b4, #6a803c),
+  'glass-tint': rgba(138, 142, 227, 0.32),
+  'ring-color': rgba(201, 203, 242, 0.9)
+);
+
+// Dark theme tokens for the optional dark mode toggle.
+$dark-theme: (
+  'color-primary-600': #7683ff,
+  'color-primary-700': #5a6be0,
+  'color-primary': #9ca9ff,
+  'color-bg': #101524,
+  'color-surface': #1a2134,
+  'color-surface-muted': #242c41,
+  'color-text': #e2e8f0,
+  'color-muted': #94a3b8,
+  'color-success': #38a169,
+  'color-warning': #fbbf24,
+  'color-danger': #f87171,
+  'radius': map.get($radius-scale, 'md'),
+  'gradient-nebula': linear-gradient(130deg, #7683ff, #5a6be0),
+  'gradient-aurora': linear-gradient(160deg, #5a6be0, #7caf51),
+  'glass-tint': rgba(86, 97, 185, 0.32),
+  'ring-color': rgba(54, 62, 113, 0.85)
+);
+
+// Helper mixin to emit CSS custom properties for each theme.
+@mixin emit-theme($selectors, $tokens) {
+  #{$selectors} {
+    @each $token, $value in $tokens {
+      --#{$token}: #{$value};
+    }
+  }
+}
+
+@include emit-theme(':root, html', $light-theme);
+@include emit-theme(':root.dark, html.dark', $dark-theme);
+
+// Public radius helper used by component and utility layers.
+@function radius($size) {
+  @return map.get($radius-scale, $size);
+}
